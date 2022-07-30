@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback Modal</title>
+</head>
+
+<body>
+    <button class="showModal" onclick="myFunction()">Show Modal</button>
+    <div class="container" id="idcontainer">
+
+        <img id="exitModal" class="imgExit" src="./img/exit.svg" alt="exit">
+        <div class="main">
+            <div class="row1">
+                <h3>Give Feedback</h3>
+                <p class="p1">What do you think of the editing tool?</p>
+            </div>
+            <div class="row2">
+                <img id="angry" src="./img/angry.svg" alt="angry">
+
+                <img id="downhearted" src="./img/downhearted.svg" alt="downhearted">
+
+                <img id="neutral" src="./img/neutral.svg" alt="neutral">
+
+                <img id="happy" src="./img/happy.svg" alt="happy">
+
+                <img id="laugh" src="./img/laugh.svg" alt="laugh">
+            </div>
+
+            <div class="row3">
+                <form action="#">
+                    <label id="labelText" for="textarea">Do you have any thoughts you’d like to share?</label>
+                    <textarea tabindex="1" placeholder="Share with us!" name="" id="textarea" cols="30"
+                        rows="10"></textarea>
+                </form>
+            </div>
+
+            <div class="row4">
+                <form action="#">
+                    <label id="labelRadio" for="">May we follow you up on your feedback?</label>
+
+
+                    <div class="yesCheck">
+                        <input type="radio" id="yes" name="yesorno" value="Yes">
+                        <label id="labelYes" for="yes">Yes</label>
+                    </div>
+
+                    <div class="noCheck">
+                        <input type="radio" id="no" name="yesorno" value="No">
+                        <label id="labelNo" for="no">No</label>
+                    </div>
+
+                    <br>
+                    <div class="buttons">
+                        <input class="send" type="submit" value="Send">
+                        <input class="cancel" type="button" value="Cancel">
+                    </div>
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
